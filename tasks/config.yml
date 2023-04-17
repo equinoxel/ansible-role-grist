@@ -15,11 +15,10 @@
 - name: "GRIST | Write configuration files"
   ansible.builtin.template:
     src: "{{ item }}.j2"
-    dest: "{{ grist_config_path | expanduser | realpath  }}/{{ item  }}"
+    dest: "{{ grist_config_path | expanduser | realpath }}/{{ item }}"
     mode: '0640'
   loop:
     - "docker-compose.yml"
     - "env.grist.conf"
   tags:
     - grist_configure
-  

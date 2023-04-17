@@ -1,11 +1,11 @@
 ---
 
 - name: "GRIST | Configure"
-  import_tasks: config.yml
+  ansible.builtin.import_tasks: config.yml
   tags:
     - grist_configure
 
 - name: "GRIST | Install"
-  import_tasks: install.yml
+  ansible.builtin.import_tasks: install.yml
   tags:
     - grist_install

@@ -3,7 +3,7 @@
 galaxy_info:
   author: Laur Ivan (laur.ivan@gmail.com)
   namespace: laurivan
-  company: 
+  company: ""
   role_name: grist
   description: Grist Role
   min_ansible_version: "2.4"
