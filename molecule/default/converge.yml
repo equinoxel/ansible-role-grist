@@ -1,0 +1,5 @@
+---
+- name: Converge
+  hosts: grist_group
+  roles:
+    - role: "laurivan.grist"

@@ -1,0 +1,19 @@
+# grist docker compose
+version: '3.9'
+services:
+  prometheus:
+    image: "{{ grist_docker_image }}:{{ grist_docker_version }}"
+    container_name: excel_grist
+    restart: unless-stopped
+    env_file:
+      - "{{ grist_config_path | expanduser | realpath }}/env.grist.conf"
+    volumes:
+      - '{{ grist_persist_path | expanduser | realpath }}:/persist'
+    ports:
+      - "{{ grist_http_port }}:8484"
+      
+    networks:
+      - grist
+
+networks:
+  grist: {}

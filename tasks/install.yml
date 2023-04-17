@@ -1,0 +1,7 @@
+---
+- name: "GRIST | Ensure grist is running"
+  community.docker.docker_compose:
+    project_src: "{{ grist_config_path | expanduser | realpath }}"
+    build: false
+  tags:
+    - grist_install

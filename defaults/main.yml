@@ -1,0 +1,29 @@
+---
+
+## General
+grist_hide_ui_elements:
+grist_page_title_suffix: _blank
+grist_single_org:
+grist_widgets_list_url: https://github.com/gristlabs/grist-widget/releases/download/latest/manifest.json
+grist_custom_css:
+grist_force_login: "false"
+
+grist_docker_image: gristlabs/grist
+grist_docker_version: latest
+
+grist_http_port: 8484
+grist_app_home_url: "http://localhost:{{ grist_http_port }}"
+
+
+# grist paths
+grist_root_path: /var/local/conf
+grist_config_path: "{{ grist_root_path }}/grist"
+grist_persist_path: "{{ grist_root_path }}/grist"
+grist_skeleton_paths:
+  - "{{ grist_config_path }}"
+  - "{{ grist_persist_path }}"
+
+# Documentation
+grist_documentation_link: "https://www.laurivan.com"
+
+
