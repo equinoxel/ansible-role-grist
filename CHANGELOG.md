@@ -1,18 +1,13 @@
-# Change Log
+# Changelog
 
-All notable changes to this project will be documented in this file.
-This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a changelog](https://github.com/olivierlacan/keep-a-changelog).
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [Unreleased](https://github.com/equinoxel/ansible-role-grist/tree/develop)
-### Changed
-### Added
-### Removed
-### Fixed
+## 1.1.0 (2023-04-30)
 
-## [X.Y.Z](https://github.com/equinoxel/ansible-role-grist/tree/X.Y.Z)
-### [Full Changelog](https://github.com/equinoxel/ansible-role-grist/compare/1.0.0...X.Y.Z)
-### Changed
- *[#<issue_number>](https://github.com/equinoxel/ansible-role-grist/issues/<issue_number>) \<Change description\>* @\<author\>
+
+### Features
+
+* Add grist functional role ([9f6ed60](https://git.laurivan.com/Dev/andible-role-grist/commit/9f6ed60365fe570f760f77b0ffe4d4ffeb1a01a2))
 
 ## [1.0.0](https://github.com/equinoxel/ansible-role-grist/tree/1.0.0)
 - Initial release
