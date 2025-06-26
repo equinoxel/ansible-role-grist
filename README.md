@@ -21,6 +21,7 @@ grist_force_login: "false"
 grist_sandbox_flavor: gvisor
 __grist_session_secret: "{{ grist_session_secret | mandatory }}"
 __grist_default_email: "{{ grist_default_email | mandatory }}"
+#grist_extra_config:
 
 grist_docker_image: gristlabs/grist
 grist_docker_version: latest
@@ -50,6 +51,7 @@ Their descriptions are as follows:
 - `grist_sandbox_flavor` - Allows to pick the sandbox. Default to **gvisor**
 - `grist_session_secret` - Define the session secret. **Mandatory**
 - `grist_default_email` - Define the administrator account. **Mandatory**
+- `grist_extra_config` - Extra, raw configuration if needed.
 - `grist_docker_image` - The Docker image to use. Defaults to **gristlabs/grist**
 - `grist_docker_version` - Docker image version to use. Defaults to **latest**
 
