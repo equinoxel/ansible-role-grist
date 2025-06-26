@@ -45,10 +45,10 @@ Their descriptions are as follows:
 
 - `grist_force_login` - Allows grist to login if true. Default to **false**
 
-- `grist_docker_image` - The Docekr image to use. Defaults to **gristlabs/grist**
+- `grist_docker_image` - The Docker image to use. Defaults to **gristlabs/grist**
 - `grist_docker_version` - Docker image version to use. Defaults to **latest**
 
-- `grist_http_port` - Exposed port for access. Deafults to **8484**
+- `grist_http_port` - Exposed port for access. Defaults to **8484**
 - `grist_app_home_url` - The named URL for the app (if you use a reverse proxy). Defaults to **http://localhost:{{ grist_http_port }}**
 - `grist_root_path` - Root path for volumes. Defaults to **/var/local/conf**
 - `grist_config_path` - Location of the configuration file (docker-compose). DEfaults to **{{ grist_root_path }}/grist**
