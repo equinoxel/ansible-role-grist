@@ -9,9 +9,9 @@
       register: docker_compose_file
 
     - name: Remove docker-compose.
-      community.docker.docker_compose:
+      community.docker.docker_compose_v2:
         project_src: "{{ grist_config_path  | expanduser | realpath }}/"
-        build: false
+        build: never
         state: absent
       when: docker_compose_file.stat.exists
       become: false

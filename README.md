@@ -18,6 +18,10 @@ grist_single_org:
 grist_widgets_list_url: https://github.com/gristlabs/grist-widget/releases/download/latest/manifest.json
 grist_custom_css:
 grist_force_login: "false"
+grist_sandbox_flavor: gvisor
+__grist_session_secret: "{{ grist_session_secret | mandatory }}"
+__grist_default_email: "{{ grist_default_email | mandatory }}"
+#grist_extra_config:
 
 grist_docker_image: gristlabs/grist
 grist_docker_version: latest
@@ -44,11 +48,14 @@ Their descriptions are as follows:
 - `grist_custom_css` - Add custom CSS (see [here](https://support.getgrist.com/self-managed/#customization) for documentation)
 
 - `grist_force_login` - Allows grist to login if true. Default to **false**
-
-- `grist_docker_image` - The Docekr image to use. Defaults to **gristlabs/grist**
+- `grist_sandbox_flavor` - Allows to pick the sandbox. Default to **gvisor**
+- `grist_session_secret` - Define the session secret. **Mandatory**
+- `grist_default_email` - Define the administrator account. **Mandatory**
+- `grist_extra_config` - Extra, raw configuration if needed.
+- `grist_docker_image` - The Docker image to use. Defaults to **gristlabs/grist**
 - `grist_docker_version` - Docker image version to use. Defaults to **latest**
 
-- `grist_http_port` - Exposed port for access. Deafults to **8484**
+- `grist_http_port` - Exposed port for access. Defaults to **8484**
 - `grist_app_home_url` - The named URL for the app (if you use a reverse proxy). Defaults to **http://localhost:{{ grist_http_port }}**
 - `grist_root_path` - Root path for volumes. Defaults to **/var/local/conf**
 - `grist_config_path` - Location of the configuration file (docker-compose). DEfaults to **{{ grist_root_path }}/grist**
